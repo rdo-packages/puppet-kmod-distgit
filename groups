@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-b4f9f9671a38b6b03e0d818235264d94ceb5daaa	puppet-kmod-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+063adbb61a3a4a6276f1c62a606df468dbf66edc       	puppet-kmod-distgit-core
+b4f9f9671a38b6b03e0d818235264d94ceb5daaa        	puppet-kmod-distgit-ptl
+global:Registered-Users		Registered Users
