@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "facab960_a457b801",
+        "filename": "puppet-kmod.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 61
+      },
+      "writtenOn": "2016-09-16T19:32:35Z",
+      "side": 1,
+      "message": "should this be upstream_name?",
+      "revId": "263afa18a4929a959b24e7d29065f550c88328cb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
