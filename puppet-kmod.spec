@@ -1,4 +1,10 @@
 %{!?upstream_version: %global upstream_version %{commit}}
+%global upstream_name puppet-kmod
+%global commit 0d69a96e8d0d3a08da0d5f476c733134df4fb9ee
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 Name:           puppet-kmod
 Version:        XXX
 Release:        XXX
@@ -7,7 +13,7 @@ License:        Apache-2.0
 
 URL:            https://github.com/camptocamp/puppet-kmod
 
-Source0:        https://github.com/camptocamp/puppet-kmod/archive/%{version}.tar.gz
+Source0:        https://github.com/camptocamp/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
