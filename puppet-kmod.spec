@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 Name:           puppet-kmod
 Version:        XXX
 Release:        XXX
