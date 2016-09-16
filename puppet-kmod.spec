@@ -1,7 +1,7 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 Name:           puppet-kmod
-Version:        XXX
-Release:        XXX
+Version:        0.0.1
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manage Linux kernel modules with Puppet
 License:        Apache-2.0
 
@@ -41,4 +41,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 
 
 %changelog
+* Fri Sep 16 2016 Haikel Guemar <hguemar@fedoraproject.org> 0.0.1-1.0d69a96.git
+- Newton update 0.0.1 (0d69a96e8d0d3a08da0d5f476c733134df4fb9ee)
 
