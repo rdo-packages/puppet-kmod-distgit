@@ -7,7 +7,7 @@ License:        Apache-2.0
 
 URL:            https://github.com/camptocamp/puppet-kmod
 
-Source0:        https://github.com/camptocamp/puppet-kmod/archive/%{version}.tar.gz
+Source0:        https://github.com/camptocamp/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
