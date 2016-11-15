@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %global upstream_name puppet-kmod
-%global commit ea03df0eff7b7e5faccb9c4e386d451301468f04
+%global commit 0d69a96e8d0d3a08da0d5f476c733134df4fb9ee
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 Name:           puppet-kmod
 Version:        2.1.1
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}'
 Summary:        Manage Linux kernel modules with Puppet
 License:        Apache-2.0
 
@@ -47,6 +47,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 2.1.1-2.0d69a96.git
+- Newton update 2.1.1 (0d69a96e8d0d3a08da0d5f476c733134df4fb9ee)
+
 * Thu Nov 03 2016 Jon Schlueter <jschluet@redhat.com> 2.1.1-1
 - Update to 2.1.1 (ea03df0eff7b7e5faccb9c4e386d451301468f04) latest tag
   0d69a96 is next commit past 2.1.1 tag with a module sync update
