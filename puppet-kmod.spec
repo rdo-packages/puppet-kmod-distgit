@@ -9,7 +9,7 @@ Name:           puppet-kmod
 Version:        XXX
 Release:        XXX
 Summary:        Manage Linux kernel modules with Puppet
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/camptocamp/puppet-kmod
 
