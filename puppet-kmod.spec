@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %global upstream_name puppet-kmod
-%global commit 0d69a96e8d0d3a08da0d5f476c733134df4fb9ee
+%global commit 924ee8552bbd5540f96f549a1f4e497376e5b08e
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 Name:           puppet-kmod
-Version:        XXX
-Release:        XXX
+Version:        2.1.1
+Release:        3%{?alphatag}%{?dist}
 Summary:        Manage Linux kernel modules with Puppet
 License:        ASL 2.0
 
@@ -47,4 +47,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 2.1.1-3.924ee85git
+- Ocata update 2.1.1 (924ee8552bbd5540f96f549a1f4e497376e5b08e)
 
