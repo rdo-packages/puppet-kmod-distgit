@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %global upstream_name puppet-kmod
-%global commit 0d69a96e8d0d3a08da0d5f476c733134df4fb9ee
+%global commit b4d8db2a92fb9aaa98c0d68dcfd3795cc7b5249b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 Name:           puppet-kmod
-Version:        XXX
-Release:        XXX
+Version:        2.1.1
+Release:        4%{?alphatag}%{?dist}
 Summary:        Manage Linux kernel modules with Puppet
 License:        ASL 2.0
 
@@ -47,5 +47,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 
 
 %changelog
+* Thu Aug 24 2017 Alfredo Moralejo <amoralej@redhat.com> 2.1.1-4.b4d8db2git
+- Pike update 2.1.1 (b4d8db2a92fb9aaa98c0d68dcfd3795cc7b5249b)
 
 
