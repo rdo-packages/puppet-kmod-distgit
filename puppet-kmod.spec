@@ -6,7 +6,7 @@
 %global alphatag .%{shortcommit}git
 
 Name:           puppet-kmod
-Version:        2.2.0
+Version:        2.4.0
 Release:        1%{?alphatag}%{?dist}
 Summary:        Manage Linux kernel modules with Puppet
 License:        ASL 2.0
@@ -47,6 +47,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 
 
 %changelog
+* Tue Feb 25 2020 RDO <dev@lists.rdoproject.org> 2.4.0-1.ad51300git
+- Update to 2.4.0
+
 * Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 2.2.0-1.ad51300git
 - Update to post 2.2.0 (ad513009a503842bece35953943ce12a0e1503ee)
 
