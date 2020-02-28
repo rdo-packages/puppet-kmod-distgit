@@ -51,4 +51,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 - Update to post 2.3.1 (41e2a2bcbe30cfb48bb061ac9ad6d74527fe87c1)
 
 
-
