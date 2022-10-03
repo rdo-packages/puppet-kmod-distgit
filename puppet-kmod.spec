@@ -1,3 +1,4 @@
+%global milestone .0rc0
 %{!?upstream_version: %global upstream_version %{commit}}
 %global upstream_name puppet-kmod
 %global commit 0d69a96e8d0d3a08da0d5f476c733134df4fb9ee
@@ -6,8 +7,8 @@
 %global alphatag .%{shortcommit}git
 
 Name:           puppet-kmod
-Version:        XXX
-Release:        XXX
+Version:        3.2.1
+Release:        0.1%{?milestone}%{?alphatag}%{?dist}
 Summary:        Manage Linux kernel modules with Puppet
 License:        ASL 2.0
 
@@ -47,5 +48,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 
 
 %changelog
+* Mon Oct 03 2022 RDO <dev@lists.rdoproject.org> 3.2.1-0.1.0rc0.1a04364git
+- Update to post 3.2.1 (1a04364d68b6d53f6b657594da05983ed2aaaa72)
+
 
 
