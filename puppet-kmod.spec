@@ -1,9 +1,5 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global upstream_name puppet-kmod
-%global commit 0d69a96e8d0d3a08da0d5f476c733134df4fb9ee
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
 
 Name:           puppet-kmod
 Version:        XXX
@@ -13,7 +9,7 @@ License:        ASL 2.0
 
 URL:            https://github.com/camptocamp/puppet-kmod
 
-Source0:        https://github.com/camptocamp/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/camptocamp/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -23,7 +19,7 @@ Requires:       puppet >= 2.7.0
 Manage Linux kernel modules with Puppet
 
 %prep
-%setup -q -n %{name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
