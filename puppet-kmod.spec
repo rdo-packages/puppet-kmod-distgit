@@ -7,9 +7,9 @@ Release:        XXX
 Summary:        Manage Linux kernel modules with Puppet
 License:        ASL 2.0
 
-URL:            https://github.com/camptocamp/puppet-kmod
+URL:            https://github.com/voxpupuli/puppet-kmod
 
-Source0:        https://github.com/camptocamp/%{upstream_name}/archive/v%{upstream_version}.tar.gz
+Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
