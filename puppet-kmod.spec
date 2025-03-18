@@ -2,8 +2,8 @@
 %global upstream_name puppet-kmod
 
 Name:           puppet-kmod
-Version:        XXX
-Release:        XXX
+Version:        4.1.0
+Release:        1%{?dist}
 Summary:        Manage Linux kernel modules with Puppet
 License:        ASL 2.0
 
@@ -43,5 +43,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/kmod/
 
 
 %changelog
+* Tue Mar 18 2025 RDO <dev@lists.rdoproject.org> 4.1.0-1
+- Update to 4.1.0
+
 
 
